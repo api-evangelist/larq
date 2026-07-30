@@ -1,0 +1,56 @@
+# LARQ
+
+> LARQ is a direct-to-consumer water technology brand that designs self-cleaning
+> and filtering drinkware and home water products. Its flagship Bottle PureVis
+> uses UV-C light to neutralize up to 99.9999% of harmful, odor-causing bacteria
+> in the bottle and on the water surface. The product range extends to filtered
+> bottles, pitchers, an under-sink water filter, and cūva beverage flavoring.
+
+LARQ is a consumer hardware and e-commerce company. As of this writing it
+publishes **no public API, developer portal, SDK, or machine-readable
+specification**. This file exists so agents can resolve what LARQ is and where
+its authoritative public pages live, and so they do not waste probes looking for
+a developer surface that does not exist.
+
+## Company
+
+- [LARQ home](https://www.livelarq.com/): Product catalog and brand home.
+- [Our Story](https://www.livelarq.com/our-story): Mission — combine innovative technology with inspirational design to help people access pristine drinking water easily and sustainably.
+- [Technology](https://www.livelarq.com/technology): How the purification and filtration technology works.
+- [Water Quality](https://www.livelarq.com/water-quality): Water quality information and education.
+- [Patents](https://www.livelarq.com/patents): Issued patents covering the purification technology.
+- [Press](https://www.livelarq.com/press): Press coverage and media resources.
+
+## Products
+
+- [Shop](https://www.livelarq.com/shop): Full product catalog.
+- [Bottles](https://www.livelarq.com/shop/bottles): Bottle PureVis and Bottle Filtered / Movement lines.
+- [Pitchers](https://www.livelarq.com/shop/pitchers): Filtered pitchers.
+- [Under Sink Filter](https://www.livelarq.com/home/larq-under-sink-water-filter): Home under-sink filtration.
+- [Cūva](https://www.livelarq.com/cuva): Beverage flavor product line.
+- [Accessories](https://www.livelarq.com/shop/accessories): Replacement filters and accessories.
+
+## Support and policies
+
+- [Support](https://www.livelarq.com/support): FAQ and customer support.
+- [Contact Us](https://www.livelarq.com/contact-us): Direct contact channel.
+- [Terms and Conditions](https://www.livelarq.com/terms-and-conditions)
+- [Privacy Policy](https://www.livelarq.com/privacy-policy)
+- [Cookie Policy](https://www.livelarq.com/cookie-policy)
+- [Accessibility](https://www.livelarq.com/accessibility)
+
+## Editorial
+
+- [basq Magazine](https://basq.livelarq.com): LARQ's editorial publication on hydration, wellness, and sustainability. No RSS or Atom feed is published.
+
+## Notes for agents
+
+- There is no LARQ API, OpenAPI description, MCP server, SDK, or CLI.
+- No `/.well-known/` discovery documents are served (security.txt, api-catalog, openid-configuration all return 404).
+- `github.com/larq` is an **unrelated** organization (a deep-learning library for binarized neural networks) and is not affiliated with LARQ the water company. Do not treat it as LARQ source code.
+- Retail and wholesale are transacted through the LARQ storefront, third-party retailers, and Faire; there is no programmatic ordering interface.
+
+---
+generated: '2026-07-19'
+method: generated
+source: apis.yml + verified live pages on https://www.livelarq.com (no /llms.txt published; returns 404)
