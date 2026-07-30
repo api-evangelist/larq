@@ -1,20 +1,54 @@
 aid: larq
 name: LARQ
-description: 'LARQ is a company surfaced as a portfolio company of dcm-ventures and added to the API Evangelist
-  network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting the enrichment pipeline.'
+description: 'LARQ is a direct-to-consumer water technology company that designs self-cleaning
+  and filtering drinkware and home water products. Its flagship Bottle PureVis uses UV-C
+  light to neutralize up to 99.9999% of harmful, odor-causing bacteria in the bottle and
+  on the water surface, and the range extends to filtered bottles, filtered pitchers, an
+  under-sink water filter, and the cuva beverage flavor line. The company positions itself
+  around sustainable hydration — reducing single-use plastic bottle consumption — and funds
+  environmental nonprofits from a portion of each purchase. LARQ is a consumer hardware and
+  e-commerce business: as of this enrichment pass it publishes no public API, developer
+  portal, SDK, or machine-readable specification, and no /.well-known/ discovery documents.
+  It was surfaced as a portfolio company of dcm-ventures. Sector: consumer.'
 url: https://raw.githubusercontent.com/api-evangelist/larq/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://www.livelarq.com/apple-touch-icon.png
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - dcm-ventures
 x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier-reason: no-public-api
+x-enriched: '2026-07-19'
+x-enrichment-note: >-
+  Enrichment pass 2026-07-19 confirmed LARQ publishes no developer surface. Probed
+  developer./api./docs. subdomains, /llms.txt, and the /.well-known/ set — all 404 or
+  non-resolving. Note that github.com/larq is an unrelated deep-learning library org and
+  is deliberately NOT wired here. Only identity, policy, support, and probed-security
+  artifacts are present.
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Consumer
+- Consumer Products
+- Water
+- Hydration
+- Filtration
+- Sustainability
+- Connected Devices
+- E-Commerce
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,3 +58,30 @@ maintainers:
 common:
 - type: Website
   url: https://www.livelarq.com/
+- type: Support
+  url: https://www.livelarq.com/support
+- type: ContactUs
+  url: https://www.livelarq.com/contact-us
+- type: Blog
+  url: https://basq.livelarq.com
+- type: Press
+  url: https://www.livelarq.com/press
+- type: TermsOfService
+  url: https://www.livelarq.com/terms-and-conditions
+- type: PrivacyPolicy
+  url: https://www.livelarq.com/privacy-policy
+- type: CookiePolicy
+  url: https://www.livelarq.com/cookie-policy
+- type: Accessibility
+  url: https://www.livelarq.com/accessibility
+- type: Patents
+  url: https://www.livelarq.com/patents
+- type: DomainSecurity
+  url: security/larq-domain-security.yml
+- type: LLMsTxt
+  url: llms/larq-llms.txt
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
