@@ -36,7 +36,7 @@ x-enrichment-note: >-
   non-resolving. Note that github.com/larq is an unrelated deep-learning library org and
   is deliberately NOT wired here. Only identity, policy, support, and probed-security
   artifacts are present.
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-19'
 tags:
