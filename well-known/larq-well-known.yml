@@ -1,23 +1,10 @@
 generated: '2026-07-19'
 method: searched
 source: live HTTP probes of https://www.livelarq.com/.well-known/*
-summary: >-
-  No /.well-known/ discovery documents are published on the LARQ web property.
-  Every probed path returned 404. Recorded as a negative result so subsequent
-  enrichment rounds do not re-probe blindly. No WellKnown or SecurityTxt pointer
-  is wired into apis.yml because no document exists.
+summary: No /.well-known/ discovery documents are published on the LARQ web property. Every probed path
+  returned 404. Recorded as a negative result so subsequent enrichment rounds do not re-probe blindly.
+  No WellKnown or SecurityTxt pointer is wired into apis.yml because no document exists.
 host: https://www.livelarq.com
-documents:
-- path: /.well-known/security.txt
-  status: 404
-- path: /.well-known/openid-configuration
-  status: 404
-- path: /.well-known/oauth-authorization-server
-  status: 404
-- path: /.well-known/api-catalog
-  status: 404
-- path: /.well-known/ai-plugin.json
-  status: 404
 related_probes:
 - url: https://www.livelarq.com/llms.txt
   status: 404
@@ -30,3 +17,21 @@ related_probes:
 - url: https://api.livelarq.com/
   status: 404
   note: host resolves but serves no API surface
+hosts:
+- host: https://www.livelarq.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+x-shape-fix:
+  converted: '2026-08-20'
+  from: documents
+  note: Rewritten into hosts[] -> documents[], the only shape well_known_docs() in score.rb reads. A served
+    .well-known surface recorded in any other shape scores as absent.
